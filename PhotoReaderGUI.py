@@ -1,6 +1,5 @@
 from tkinter import scrolledtext
 
-import pytesseract
 import tkinter
 import PhotoReaderLauncherAndCommands
 
@@ -19,24 +18,16 @@ browseFilesButton = tkinter.Button(mainWindow, text="Browse Files", command=Phot
 browseFilesButton.pack(side=tkinter.TOP, padx=10, pady=50)
 browseFilesButton.place(x=300, y=35)
 
-analyzeImageText = tkinter.Button(mainWindow, text="Analyze Image Text", command=PhotoReaderLauncherAndCommands.analyzeImageTextCommand)
+analyzeImageText = tkinter.Button(mainWindow, text="Analyze Image", command=PhotoReaderLauncherAndCommands.analyzeImageCommand)
 analyzeImageText.pack(side=tkinter.TOP, padx=10, pady=50)
-analyzeImageText.place(x=120, y=78)
+analyzeImageText.place(x=165, y=78)
 
-clearButton = tkinter.Button(mainWindow, text="Clear Image and Text", command=PhotoReaderLauncherAndCommands.clearImageAndTextCommand)
+clearButton = tkinter.Button(mainWindow, text="Clear", command=PhotoReaderLauncherAndCommands.clearCommand)
 clearButton.pack(side=tkinter.TOP, padx=10, pady=50)
-clearButton.place(x=250, y=78)
+clearButton.place(x=272, y=78)
 
-leftArrowButton = tkinter.Button(mainWindow, image=leftArrowIconImage, command=PhotoReaderLauncherAndCommands.leftArrowCommand)
-leftArrowButton.pack(side=tkinter.TOP, padx=10, pady=50)
-leftArrowButton.place(x=185, y=120, width=40)
-
-rightArrowButton = tkinter.Button(mainWindow, image=rightArrowIconImage, command=PhotoReaderLauncherAndCommands.rightArrowCommand)
-rightArrowButton.pack(side=tkinter.TOP, padx=10, pady=50)
-rightArrowButton.place(x=250, y=120, width=40)
-
-outputArea = scrolledtext.ScrolledText(mainWindow, wrap=tkinter.WORD, width=58, height=19, state=tkinter.DISABLED)
+outputArea = scrolledtext.ScrolledText(mainWindow, wrap=tkinter.WORD, width=58, height=22, state=tkinter.DISABLED)
 outputArea.pack(side=tkinter.BOTTOM)
-outputArea.place(x=10, y=180)
+outputArea.place(x=10, y=130)
 
 mainWindow.mainloop()
