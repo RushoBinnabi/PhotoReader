@@ -1,3 +1,3 @@
 # PhotoReader
 
-### Currently being worked on.
+### Finished and Launched.
