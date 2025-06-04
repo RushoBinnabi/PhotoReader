@@ -7,9 +7,6 @@ mainWindow = tkinter.Tk()
 mainWindow.title("Photo Reader")
 mainWindow.geometry("500x500")
 
-leftArrowIconImage = tkinter.PhotoImage(file=r"Assets/leftArrowIconImage.png")
-rightArrowIconImage = tkinter.PhotoImage(file=r"Assets/rightArrowIconImage.png")
-
 filepathEntryWidget = tkinter.Entry(mainWindow, state=tkinter.DISABLED)
 filepathEntryWidget.pack(side=tkinter.TOP, padx=15, pady=15)
 filepathEntryWidget.place(x=117, y=38, width=170, height=22)
