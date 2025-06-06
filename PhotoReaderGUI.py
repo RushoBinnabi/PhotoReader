@@ -1,7 +1,14 @@
+# Name: Rusho Binnabi
+# Date: 6/6/2025
+# Project: PhotoReader - GUI
+# Contact Information: RushoBinnabi123@yahoo.com
+
 from tkinter import scrolledtext
 
 import tkinter
 import PhotoReaderLauncherAndCommands
+
+# this PhotoReaderGUI file has the code needed for the GUI to function.
 
 mainWindow = tkinter.Tk()
 mainWindow.title("Photo Reader")
